@@ -6,13 +6,22 @@ nav:
   order: 1
 group:
   order: 1
-  title: 基础表格
+  title: Table页面
   path: /table
 ---
 
-### 使用
+### 基础表格
 
-```sh
-fe table userList
 ```
+fe table
+```
+
+<code src="./components/table.tsx"></code>
+
+### Action 表格
+
+```
+fe table-action
+```
+
 <code src="./components/index.tsx"></code>

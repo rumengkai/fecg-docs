@@ -16,8 +16,8 @@ export default defineConfig({
   outputPath: 'docs-dist',
   exportStatic: {}, // 对每隔路由输出html
   dynamicImport: {}, // 动态导入
+  links: [{ rel: 'stylesheet', type: 'text/css', href: `/${repo}/styles/antd.css` }],
   styles: [`.__dumi-default-previewer-demo { overflow-x: scroll; }`],
-
   hash: true, //加hash配置，清除缓存
   manifest: {
     // 内部发布系统规定必须配置
