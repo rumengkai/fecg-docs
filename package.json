@@ -1,0 +1,73 @@
+{
+  "name": "fecg-docs",
+  "version": "0.0.1",
+  "homepage": "https://temp-static-domain.jd.com/fecg-docs/",
+  "main": "es/index.js",
+  "files": [
+    "es"
+  ],
+  "scripts": {
+    "start": "dumi dev",
+    "prettier": "prettier --write \"**/*.{js,jsx,tsx,ts,less,md,json}\"",
+    "docs:build": "dumi build",
+    "docs:deploy": "sh docs_deploy.sh",
+    "build": "father-build",
+    "release": "npm run build && npm publish",
+    "test": "umi-test",
+    "test:coverage": "umi-test --coverage"
+  },
+  "gitHooks": {
+    "pre-commit": "lint-staged"
+  },
+  "lint-staged": {
+    "*.{js,jsx,less,md,json}": [
+      "prettier --write"
+    ],
+    "*.ts?(x)": [
+      "prettier --parser=typescript --write"
+    ]
+  },
+  "sideEffects": [
+    "./src/**/*.less"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://coding.jd.com/jd_smart_fe/fecg-docs.git"
+  },
+  "keywords": [
+    "cli",
+    "generator",
+    "fecg",
+    "fecg-vscode",
+    "plop",
+    "代码生成器"
+  ],
+  "peerDependencies": {
+    "@ant-design/pro-table": "^2.71.2",
+    "ahooks": "^3.3.0",
+    "axios": "^0.26.1",
+    "lodash": "^4.17.21",
+    "react": ">=16.8.0"
+  },
+  "dependencies": {
+    "@types/lodash": "^4.14.180",
+    "@ant-design/pro-table": "^2.71.2",
+    "ahooks": "^3.3.0",
+    "antd": "^4.19.5",
+    "axios": "^0.26.1",
+    "lodash": "^4.17.21",
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0",
+    "react-sortablejs": "^6.1.4",
+    "sortablejs": "^1.15.0"
+  },
+  "devDependencies": {
+    "@umijs/test": "^3.0.5",
+    "classnames": "^2.3.1",
+    "dumi": "^1.0.10",
+    "father-build": "^1.17.2",
+    "lint-staged": "^10.0.7",
+    "prettier": "^2.2.1",
+    "yorkie": "^2.0.0"
+  }
+}
