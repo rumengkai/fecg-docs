@@ -18,6 +18,8 @@ $ fe openapi
 [openAPI]: ✅ 生成 mock 文件成功
 ```
 
+![](https://raw.githubusercontent.com/rumengkai/fecg/main/public/use_demo_openapi.gif)
+
 > 注意：如果要使用 openapi 功能，需要在项目根路径增加配置文件：fecg.config.js
 
 ```js
