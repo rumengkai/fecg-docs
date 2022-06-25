@@ -20,9 +20,3 @@ ahooks
 ```sh
 npm install fecg -g
 ```
-
-OR
-
-```sh
-npm install @jd/fecg -g --registry=http://registry.m.jd.com
-```

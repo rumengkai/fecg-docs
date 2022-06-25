@@ -1,7 +1,7 @@
-import React from 'react';
 import { Button, Checkbox, Form, Input } from 'antd';
+import React from 'react';
 
-const App = () => {
+const BasicForm = () => {
   const onFinish = values => {
     console.log('Success:', values);
   };
@@ -77,4 +77,4 @@ const App = () => {
   );
 };
 
-export default App;
+export default BasicForm;

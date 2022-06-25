@@ -1,6 +1,6 @@
-import React from 'react';
+// base table
 import { Space, Table, Tag } from 'antd';
-
+import React from 'react';
 const columns = [
   {
     title: 'Name',
@@ -75,6 +75,6 @@ const data = [
   },
 ];
 
-const App = () => <Table columns={columns} dataSource={data} />;
+const BasicTable = () => <Table columns={columns} dataSource={data} />;
 
-export default App;
+export default BasicTable;

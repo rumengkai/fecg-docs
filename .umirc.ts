@@ -6,7 +6,7 @@ export default defineConfig({
   mfsu: {},
   // 网站描述配置
   mode: 'site',
-  title: '代码生成器',
+  title: 'FECG 🚀',
   favicon: `/${repo}/images/favicon.ico`,
   logo: `/${repo}/images/photos.svg`,
   description: `${repo} 代码生成器`,

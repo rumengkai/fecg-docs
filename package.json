@@ -12,6 +12,7 @@
     "docs:build": "dumi build",
     "docs:deploy": "sh docs_deploy.sh",
     "build": "father-build",
+    "syncTpl": "sh syncTpl.sh",
     "release": "npm run build && npm publish",
     "test": "umi-test",
     "test:coverage": "umi-test --coverage"
@@ -50,13 +51,13 @@
     "react": ">=16.8.0"
   },
   "dependencies": {
-    "@types/lodash": "^4.14.180",
     "@ant-design/pro-table": "^2.71.2",
+    "@types/lodash": "^4.14.180",
     "ahooks": "^3.3.0",
     "antd": "^4.19.5",
     "axios": "^0.26.1",
     "lodash": "^4.17.21",
-    "react": "^18.0.0",
+    "react": ">=16.8.0",
     "react-dom": "^18.0.0",
     "react-sortablejs": "^6.1.4",
     "sortablejs": "^1.15.0"
@@ -64,6 +65,7 @@
   "devDependencies": {
     "@umijs/test": "^3.0.5",
     "classnames": "^2.3.1",
+    "download-git-repo": "^3.0.2",
     "dumi": "^1.0.10",
     "father-build": "^1.17.2",
     "lint-staged": "^10.0.7",
