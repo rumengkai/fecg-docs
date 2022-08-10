@@ -14,18 +14,35 @@ group:
 .
 ├── package.json
 ├── public
+├── docs                    // 文档
+│   ├── components
+│   │    ├── fe-pages
+│   │    ├── form.md
+│   │    └── list.md
+│   ├── notice
+│   └── index.md
 └── src
-    ├── .umi
-    └── components
-        └── Component
-          └── demos
-            └── index.tsx     // 文档中 demo 代码块
-          ├── index.less      // 组件样式
-          ├── index.md        // 组件使用文档
-          └── index.tsx       // 组件代码
-        .
-        .
-        .
+    └── templates
+    │    ├── form                // 文档中 demo 代码块
+    │    │   ├── advanced-form   // 模板资产
+    │    │   │   └── index.tsx
+    │    │   ├── basic-form
+    │    │   │   └── index.tsx
+    │    │   └── step-form
+    │    │       └── index.tsx
+    │    ├── list
+    │    │   ├── basic-table
+    │    │   │   └── index.tsx
+    │    │   ├── edit-table
+    │    │   │   └── index.tsx
+    │    │   └── sort-table
+    │    │       ├── index.less
+    │    │       └── index.tsx
+    │    └── page
+    │        ├── index.less
+    │        └── index.tsx
+    │   .
+    │   .
     ├── config
     ├── styles
     ├── utils
